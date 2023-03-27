@@ -22,11 +22,13 @@
 </div>
 
 ## About
-Go module with context support that handles some of the difficulties from interacting with Discord's bot interface for you; websocket sharding, auto-scaling of websocket connections, advanced caching (cache replacement strategies to restrict memory usage), helper functions, middlewares and lifetime controllers for event handlers, etc.
+Introducing our Go module with context support - a powerful tool for simplifying the process of interacting with Discord's bot interface. Our module handles various difficulties such as websocket sharding, auto-scaling of websocket connections, advanced caching, and more.
 
-This package is intented to be used with the gateway to keep the cache up to date. You should treat data as read only, since they simply represent the discord state. To change the discord state you can use the REST methods and the gateway commands, which will eventually update your local state as well.
+With helper functions, middlewares, and lifetime controllers for event handlers, our package is designed to make your experience with Discord's bot interface as seamless as possible. Plus, our advanced caching features include cache replacement strategies to restrict memory usage, ensuring that your system runs smoothly.
 
-If you want a more lightweight experience you can disable/reject events that you do not need or want to keep track of. Be careful as this might break certain things.
+Please note that this package is intended to be used with the gateway to keep the cache up to date. It's important to treat data as read-only since it represents the Discord state. To change the Discord state, you can use the REST methods and gateway commands, which will eventually update your local state as well.
+
+For a more lightweight experience, you can disable or reject events that you don't need or want to keep track of. However, please use caution as this might break certain functions.
 
 ## Tips
  - Use disgord.Snowflake, not snowflake.Snowflake.
